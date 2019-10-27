@@ -1,0 +1,39 @@
+#include <iostream>
+#include<stdio.h>
+#include<bits/stdc++.h>
+#include<conio.h>
+#include<vector>
+using namespace std;
+
+int main()
+
+{   unsigned long long int n;
+    cin>>n;
+
+    while(n--)
+    {    long long int inp;
+        long long int n=3;
+         long long int sum=0;
+         long long int mult=1;
+        cin>>inp;
+        while(inp>sum)
+        {
+
+            sum=sum+mult;
+            mult=mult*3;
+            //itr++;
+        }
+        while(mult!=0)
+        {
+            if(sum-mult>=inp)
+                {sum=sum-mult;
+                }
+            mult=mult/3;}
+
+ cout<<sum<<endl;
+
+    }
+
+
+    return 0;
+}
